@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+
+.main-window {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #c4c1c1;
+    border-radius: 5px;
+}
+
+.post-window{
+    margin: 10px;
+    padding: 5px;
+    padding-left: 140px;
+}
+.ui.form{
+    display: flex;
+}
+
+.ui.vertical{
+    max-height: 120px;
+}
+
+.ui.form > .field {
+    flex-grow: 1;
+}
+
+.field textarea{
+    height: 110px;
+}
+
+.row {
+    padding:10px 140px 0 ;
+}
+
+.ui.checkbox label , .image.label{
+
+   padding: 0 10px;
+}
+
+.image.label.basic{
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.ui.image.label.basic{
+    padding-right: 0;
+}
+
+#ui_postdatacontainer{
+    display: none;
+}
+
+#ui_referercontainer{
+    display: none;
+}
+
+.ui-btn{
+    border: none;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#col2{
+    display: none;
+}
+
+#col3{
+    display: none;
+}
+
+.input > .label {
+    width: 40%;
+}

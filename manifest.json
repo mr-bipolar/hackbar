@@ -1,0 +1,29 @@
+{
+  "description": "This hackbar moded by Mr.silent coder - Telegram @mr_bipolar",
+  "manifest_version": 2,
+  "name": "Max HacKBar",
+  "version": "4.9",
+  "author": "Mr.silent coder",
+  "homepage_url": "http://youtube.com/mrsilentcoder",
+  "developer": {
+    "name": "Aaron Cruz",
+    "url": "https://t.me/mr_bipolar"
+  },
+  "icons": {
+    "48": "icons/icon.png",
+    "64": "icons/icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "devtools_page": "hackbar/hackbar.html",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
