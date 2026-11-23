@@ -1,0 +1,44 @@
+# Generated XPI packages
+web-ext-artifacts/
+*.xpi
+
+# Test and coverage output
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE settings
+.vscode/
+.idea/
+
+# Node dependencies (if used for development)
+node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local environment files
+.env
+.env.*
+
+# Development screenshots and previews
+screen-preview/
+
+# Build and audit output
+build/
+dist/
+audit-reports/
