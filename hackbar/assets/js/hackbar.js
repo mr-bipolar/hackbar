@@ -16,9 +16,9 @@ function handleHidden() {
  */
 browser.devtools.panels.create(
     "Max HacKBar",
-    "/icons/icon.png",
+    "/icons/hackbar-48.png",
     "/hackbar/ui.html"
-).then(function(newPanel) {
+).then(function (newPanel) {
     newPanel.onShown.addListener(handleShown);
     newPanel.onHidden.addListener(handleHidden);
 });

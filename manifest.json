@@ -1,23 +1,37 @@
 {
-  "description": "This hackbar moded by Mr.silent coder - Telegram @mr_bipolar",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{f7b44fd2-5b39-4d0f-ade5-d06a0d189ee0}",
+      "data_collection_permissions": {
+        "required": [
+          "locationInfo",
+          "browsingActivity",
+          "websiteContent"
+        ]
+      }
+    }
+  },
+  "description": "A browser-based developer toolkit for encoding, decoding, hashing, and web security testing.",
   "manifest_version": 2,
-  "name": "Max HacKBar",
-  "version": "4.9",
+  "name": "Max HackBar",
+  "version": "4.9.1",
   "author": "Mr.silent coder",
-  "homepage_url": "http://youtube.com/mrsilentcoder",
+  "homepage_url": "https://youtube.com/mrsilentcoder",
   "developer": {
     "name": "Aaron Cruz",
     "url": "https://t.me/mr_bipolar"
   },
   "icons": {
-    "48": "icons/icon.png",
-    "64": "icons/icon.png"
+    "16": "icons/hackbar-16.png",
+    "32": "icons/hackbar-32.png",
+    "48": "icons/hackbar-48.png",
+    "64": "icons/hackbar-64.png",
+    "128": "icons/hackbar-128.png"
   },
   "permissions": [
-    "tabs",
-    "activeTab",
     "webRequest",
     "webRequestBlocking",
+    "storage",
     "<all_urls>"
   ],
   "devtools_page": "hackbar/hackbar.html",
